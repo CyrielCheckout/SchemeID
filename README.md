@@ -2,7 +2,7 @@
 
 ## Installation
 
-Headless Chrome requires [Node.js](https://nodejs.org/) v10+ to run.
+SchemeID requires [Node.js](https://nodejs.org/) v10+ to run.
 
 Install the dependencies and devDependencies and start the server.
 
@@ -14,7 +14,12 @@ node index.js
 
 In the index.js file line 7 insert the private key of the merchant.
 Paste the merchant export to the root of the project (in the SchemeID folder).
-Before launching the export, make sure that the file contains only the target PaymentIDs. Make sure there is no header and that the file is named :Exportmerchant.csv
+Before launching the export : 
+1. Make sure that the file contains only the target PaymentIDs. 
+1. Make sure there is no header and that the file is named :Exportmerchant.csv.
+
+------------
+
 Then run the command: node index.js
 The batch will then be launched, without any significant risk for the platform, since it waits for the end of a request before launching a new one.
 Once the export is finished a new Export.csv file will appear in the SchemeID folder.

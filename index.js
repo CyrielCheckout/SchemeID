@@ -50,6 +50,12 @@ async function getPaymentDetails() {
             console.log("Running : ", obj);
             data.push(obj);
             obj = {};
+        } else {
+            obj["paymentid"] = paymentID;
+            obj["schemeid"] = "ERROR PAYMENT REFUSED";
+            console.log("Running : ", obj);
+            data.push(obj);
+            obj = {};
         }
     }
 }

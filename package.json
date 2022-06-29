@@ -1,0 +1,16 @@
+{
+  "name": "schemeid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "checkout-sdk-node": "^2.0.2",
+    "csv-writer": "^1.6.0",
+    "fast-csv": "^4.3.6"
+  }
+}
